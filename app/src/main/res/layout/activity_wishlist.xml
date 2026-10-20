@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8EF">
+
+
+    <!-- ============================== -->
+    <!-- MAIN CONTENT -->
+    <!-- ============================== -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="❤️ My Wishlist"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#3B1F0F"
+            android:paddingBottom="8dp" />
+
+
+        <!-- SUBTITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your favourite food items"
+            android:textSize="14sp"
+            android:textColor="#806B5E"
+            android:paddingBottom="16dp" />
+
+
+        <!-- RECYCLER -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/wishlistRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="Wishlist items"
+            android:clipToPadding="false" />
+
+
+        <!-- EMPTY TEXT -->
+
+        <TextView
+            android:id="@+id/emptyWishlistText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Your Wishlist is Empty ❤️"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#6B5142"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <!-- ============================== -->
+    <!-- BOTTOM NAVIGATION -->
+    <!-- ============================== -->
+
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:elevation="8dp">
+
+
+        <!-- ============================== -->
+        <!-- HOME -->
+        <!-- ============================== -->
+
+        <LinearLayout
+            android:id="@+id/homeNav"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:contentDescription="Home">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🏠"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="12sp"
+                android:textColor="#3B1F0F" />
+
+        </LinearLayout>
+
+
+        <!-- ============================== -->
+        <!-- WISHLIST -->
+        <!-- ============================== -->
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:id="@+id/wishlistNav"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:contentDescription="Wishlist">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="❤️"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wishlist"
+                    android:textSize="12sp"
+                    android:textColor="#3B1F0F" />
+
+            </LinearLayout>
+
+
+            <!-- WISHLIST BADGE -->
+
+            <TextView
+                android:id="@+id/wishlistBadgeCount"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/badge_background"
+                android:visibility="gone"
+                android:contentDescription="Wishlist item count" />
+
+        </FrameLayout>
+
+
+        <!-- ============================== -->
+        <!-- CART -->
+        <!-- ============================== -->
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:id="@+id/cartNav"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:contentDescription="Cart">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🛒"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cart"
+                    android:textSize="12sp"
+                    android:textColor="#3B1F0F" />
+
+            </LinearLayout>
+
+
+            <!-- CART BADGE -->
+
+            <TextView
+                android:id="@+id/cartBadgeCount"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/badge_background"
+                android:visibility="gone"
+                android:contentDescription="Cart item count" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

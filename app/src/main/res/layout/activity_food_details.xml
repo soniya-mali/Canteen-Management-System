@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F4F6F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- FOOD IMAGE + HEART -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp">
+
+            <ImageView
+                android:id="@+id/foodImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/burger" />
+
+            <ImageButton
+                android:id="@+id/wishlistBtn"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Add to Wishlist"
+                android:padding="8dp"
+                android:src="@android:drawable/btn_star_big_off"
+                android:tint="#E91E63" />
+
+        </FrameLayout>
+
+
+        <!-- WHITE CARD -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp">
+
+
+            <!-- FOOD NAME -->
+
+            <TextView
+                android:id="@+id/foodName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chicken Burger"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="#212121" />
+
+
+            <!-- PRICE -->
+
+            <TextView
+                android:id="@+id/foodPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹150"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="8dp" />
+
+
+            <!-- RATING -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⭐ 4.8   •   20 mins"
+                android:textColor="#FF9800"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+
+            <!-- DESCRIPTION -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Freshly prepared delicious food with premium ingredients. Perfect for breakfast, lunch or dinner."
+                android:textColor="#757575"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp" />
+
+
+            <!-- DIVIDER -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+
+            <!-- SIZE TITLE -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Size"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#212121" />
+
+
+            <!-- SIZE OPTIONS -->
+
+            <RadioGroup
+                android:id="@+id/sizeGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/smallSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small" />
+
+                <RadioButton
+                    android:id="@+id/mediumSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/largeSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Large" />
+
+            </RadioGroup>
+
+
+            <!-- DIVIDER -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+
+            <!-- QUANTITY TITLE -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#212121" />
+
+
+            <!-- QUANTITY CONTROLS -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp">
+
+                <Button
+                    android:id="@+id/minusBtn"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:text="-"
+                    android:textSize="26sp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#F44336" />
+
+                <TextView
+                    android:id="@+id/quantityText"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/plusBtn"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:text="+"
+                    android:textSize="24sp"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#4CAF50" />
+
+            </LinearLayout>
+
+
+            <!-- DIVIDER -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp" />
+
+
+            <!-- TOTAL BILL -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Total Bill"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#212121" />
+
+                <TextView
+                    android:id="@+id/totalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹150"
+                    android:textStyle="bold"
+                    android:textSize="28sp"
+                    android:textColor="#FF5722" />
+
+            </LinearLayout>
+
+
+            <!-- ADD TO CART -->
+
+            <Button
+                android:id="@+id/addCartBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="🛒 ADD TO CART"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4CAF50"
+                android:layout_marginTop="30dp" />
+
+
+            <!-- PLACE ORDER -->
+
+            <Button
+                android:id="@+id/orderBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="📦 PLACE ORDER"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FF9800"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

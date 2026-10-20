@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/loginform"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name" />
+
+    <!-- Dark overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <!-- Form -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="25dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_account"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:autofillHints="name"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:background="@drawable/edittext_bg"
+            android:padding="16dp"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:background="@drawable/edittext_bg"
+            android:padding="16dp"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:background="@drawable/edittext_bg"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/register"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:background="@drawable/btn_round" />
+
+    </LinearLayout>
+
+</RelativeLayout>

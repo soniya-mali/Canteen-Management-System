@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7EFE6"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- ========================================= -->
+        <!-- HEADER -->
+        <!-- ========================================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧾  My Orders"
+            android:textColor="#3B1F0F"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:paddingBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your recent orders"
+            android:textColor="#806B5E"
+            android:textSize="14sp"
+            android:paddingBottom="20dp"/>
+
+        <!-- ========================================= -->
+        <!-- EMPTY MESSAGE -->
+        <!-- ========================================= -->
+
+        <TextView
+            android:id="@+id/emptyText"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:gravity="center"
+            android:text="No Orders Yet 🍽️"
+            android:textColor="#6B5142"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <!-- ========================================= -->
+        <!-- ORDERS -->
+        <!-- ========================================= -->
+
+        <LinearLayout
+            android:id="@+id/ordersContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+</ScrollView>

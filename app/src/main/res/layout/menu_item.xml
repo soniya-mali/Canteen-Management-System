@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+
+        <!-- =========================
+             FOOD IMAGE
+             ========================= -->
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:contentDescription="Food Image"
+            android:scaleType="centerCrop" />
+
+
+        <!-- =========================
+             FOOD NAME
+             ========================= -->
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="124dp"
+
+            android:gravity="center"
+            android:maxLines="1"
+
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:text="Food Name"
+            android:textColor="@android:color/black"
+
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <!-- =========================
+             FOOD PRICE
+             ========================= -->
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="8dp"
+
+            android:gravity="center"
+            android:text="₹50"
+            android:textColor="#2E7D32"
+            android:textSize="15sp"
+
+            android:textStyle="bold" />
+
+
+        <!-- =========================
+             SMALL HEART
+             RIGHT BOTTOM CORNER
+             ========================= -->
+
+        <TextView
+            android:id="@+id/heartIcon"
+
+            android:layout_width="27dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom|end"
+
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="5dp"
+
+            android:background="@drawable/bg_heart_circle"
+
+            android:clickable="true"
+            android:contentDescription="Wishlist"
+
+            android:elevation="8dp"
+
+            android:focusable="true"
+
+            android:gravity="center"
+            android:text="♡"
+            android:textColor="#000000"
+            android:textSize="23sp"
+
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

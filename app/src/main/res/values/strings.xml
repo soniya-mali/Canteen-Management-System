@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Canteen Management App</string>
+
+    <!-- Login Screen -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+
+    <!-- Register Screen -->
+    <string name="create_account">Create Account</string>
+    <string name="name">Name</string>
+    <string name="register">Register</string>
+
+    <!-- General -->
+    <string name="invalid_login">Invalid Login</string>
+    <string name="registration_success">Registered Successfully</string>
+</resources>
