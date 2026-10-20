@@ -27,23 +27,19 @@ Android Studio
 ## ScreenShots
 ## 📱 Application Screenshots
 
+## 📱 Application Screenshots
+
 ### 🏠 Home Screen
-![Home Screen](home-screen.png)
+<img src="home-screen.png" width="250">
 
 ### 🍽️ Food Details
-![Food Details](food-details.png)
+<img src="food-details.png" width="250">
 
 ### ❤️ Wishlist
-![Wishlist](wishlist-screen.png)
+<img src="wishlist-screen.png" width="250">
 
 ### 💳 Payment Screen
-![Payment](payment-screen.png)
-
-### 🏦 Payment Gateway
-![Payment Gateway](razorpay-payment-gateway.png)
-
-### 📋 My Orders
-![My Orders](my-orders.png)
+<img src="payment-screen.png" width="250">
 
 ## 👩‍💻 Developer
 
