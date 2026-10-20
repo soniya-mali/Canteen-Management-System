@@ -24,6 +24,27 @@ The Canteen Management System is designed to help manage canteen operations thro
 
 Android Studio
 
+## ScreenShots
+## 📱 Application Screenshots
+
+### 🏠 Home Screen
+![Home Screen](home-screen.png)
+
+### 🍽️ Food Details
+![Food Details](food-details.png)
+
+### ❤️ Wishlist
+![Wishlist](wishlist-screen.png)
+
+### 💳 Payment Screen
+![Payment](payment-screen.png)
+
+### 🏦 Payment Gateway
+![Payment Gateway](razorpay-payment-gateway.png)
+
+### 📋 My Orders
+![My Orders](my-orders.png)
+
 ## 👩‍💻 Developer
 
 **Soniya Mali**
